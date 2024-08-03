@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+    <body>
+            <div class="header">
+                <span>Web Manajemen Perusahaan</span>
+                <div style="display: flex;position: absolute; right: 0;top:0;width:  max-content;">
+                    <ul class="menu1" style="list-style-type: none;display: flex;">
+                        <li>
+                            <p><i class="fa-regular fa-user"></i><?php echo $_SESSION['username'];?></p>
+                        </li>
+                        <li style="padding-left: 10px;place-self: center;">
+                            <button value="Logout" name="logout" class="logout_but" onclick="window.location= 'http://localhost/PROJECT/logout.php'">Logout<i class="fa-solid fa-right-from-bracket"></i></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu2">
+                    <ul>
+                        <li><a href="logout.php">Log out</a></li>
+                        <li><a href="registration.php">Sign Up</a></li>
+                    <ul>
+                </div>
+            </div>
+            <div class="user1">
+                <div class="data" style="padding:20px 10px 20px 10px;">
+                    <span style="position: relative;"><p style="font-size: 20px;">Back</p></span>
+                    <img src="none" width="100" height="100">
+                    <p>Muhammad Ryan Ardiansyah</p>
+                    <p>L200220131</p>
+
+                    <img src="none" width="100" height="100">
+                    <p>Muhammad Kholis Affandi</p>
+                    <p>L200220131</p>
+
+                    <img src="none" width="100" height="100">
+                    <p>Ilyas Wahyu Bharata</p>
+                    <p>L200220131</p>
+                </div>
+                <div class="description">
+                    <h2 class="title">About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum ipsa expedita architecto explicabo temporibus perferendis inventore possimus rerum cumque, incidunt sunt in maxime, soluta magni consequuntur obcaecati voluptates quaerat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum ipsa expedita architecto explicabo temporibus perferendis inventore possimus rerum cumque, incidunt sunt in maxime, soluta magni consequuntur obcaecati voluptates quaerat.</p>
+                </div>
+            </div>
+            <script>
+                /* Set the width of the side navigation to 250px */
+                function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                }
+    
+                /* Set the width of the side navigation to 0 */
+                function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+            <script src="https://kit.fontawesome.com/8974ffcae9.js" crossorigin="anonymous"></script>
+    </body>
+</html>

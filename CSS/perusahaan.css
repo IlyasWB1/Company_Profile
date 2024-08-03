@@ -1,0 +1,73 @@
+table{
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    width:80%;
+    margin:0 auto;
+    position:relative;
+  }
+
+  .redTable{
+    overflow-y: auto;
+  }
+  .redTable td, .redTable tr{
+    padding-left: 20px;
+  }
+
+  .redTable2{
+    overflow-y: auto;
+  }
+  .redTable2 td, .redTable2 tr{
+    padding-left: 20px;
+  }
+
+  thead tr        { 
+    height:60px;
+    background:#FFED86;
+    font-size:16px;
+    
+  }
+
+  tbody tr        { 
+    height:48px; border-bottom:1px solid #caccc8 ;
+    color: black;
+    padding-left: 20px;
+  }
+
+  tbody tr:nth-child(even){
+    background-color: aliceblue;
+  }
+
+  #section1{
+    width: 980px;
+    height: 700px;
+    margin: 20px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background:white;
+    border-radius:6px;
+    overflow-y: auto;
+    box-shadow: 0 10px 2px -2px rgb(13, 13, 13);
+  }
+
+  #section2{
+    width: 980px;
+    height: 500px;
+    margin: 20px auto;
+    background:white;
+    border-radius:6px;
+    box-shadow: 0 10px 2px -2px rgb(13, 13, 13);
+  }
+
+  #section3{
+    width: 980px;
+    height: 700px;
+    margin: 20px auto;
+    background:white;
+    border-radius:6px;
+    overflow-y: auto;
+    box-shadow: 0 10px 2px -2px rgb(13, 13, 13);
+    padding-left: 15px;
+    padding-right: 15px;
+  }

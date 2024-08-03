@@ -1,0 +1,326 @@
+body{
+    background-color: rgb(33, 32, 32);
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+  cursor: pointer;
+}
+button{
+  cursor: pointer ;}
+
+.main{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.company_con{
+  display: block;
+  background-color: rgb(12, 12, 12);
+  border-radius: 5%;
+  color: aliceblue;
+  width: 200px;height: 75px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+.wrapper2{
+  position: relative;
+  flex-shrink: 2;
+  text-align: center;
+  background-color: #292929;
+  border-radius: 5%;
+  width: 410px; 
+  height: 480px;
+  padding: 10px 10px 40px 10px;
+  margin: 5% auto;
+  box-sizing: content-box;
+  z-index: 2;
+}
+
+.wrapper2 .login{
+  position: relative;
+  height: 400px;
+}
+
+.profile_setting{
+  display: flex; 
+  flex-wrap:wrap;
+  position:absolute;
+  height: 0;
+  left:30;top:65;
+  z-index: 999;
+  background-color: #fff;
+  color: black;
+  transition: 0.5s;
+  padding-bottom: 10px;
+}
+.profile_option{
+  display: none;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.profile_option li {
+  float: left; /* Floats the items to the left */
+  width: 100%; /* Ensures the floated items take up full width */
+}
+
+
+.wrapper{
+  z-index: 1;
+  flex-shrink: 3;
+  text-align: center;
+  background-color: #292929;
+  border-radius: 5%;
+  width: 410px; 
+  height: max-content;
+  padding: 10px 10px 40px 10px;
+  margin: 5% auto;
+  box-sizing: content-box;
+}
+
+
+
+  .user1{
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 100px;
+    width: 1000px;
+    height: auto;
+    padding: 10px 8px 10px 8px;
+    background-color: #141212 ;
+    border-radius: 5%;
+    margin: 0 auto;
+  }
+
+  .user1 span{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 20;
+  }
+
+  .user1 .title{
+    color: rgb(225, 230, 235);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .desc{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 6px;
+    background-color: white;
+    color: #000000;
+    width: 75%;
+    padding: 15px auto;
+  }
+
+  .user1 .desc span{
+    position: relative;
+    right: 0;
+  }
+
+  .data{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  .card{
+    background-color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 4px;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .card:hover{
+    width: 250px;
+    height: fit-content;
+  }
+
+  .data span{
+    column-gap: 20px;
+  }
+
+
+.header{
+    position: relative;
+    display: block;
+    position: relative;
+    background-color: rgb(40, 39, 39);
+    height: max-content;
+    width: 100%;
+    color: aliceblue;
+
+}
+
+.header span{
+  font-size: 35px;
+  padding: 10px 10px 75px 10px;
+  border-radius: 20px;
+}
+
+.header span:hover{
+  font-size: 35px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(27, 26, 26);
+  cursor: pointer;
+}
+
+
+.header .menu2{
+  position: relative;
+  width: auto;
+  height: 20px;
+  bottom: 0;
+  background-color: black;
+}
+
+.header .menu2 ul{
+  left: 0;
+  padding-left: 0;
+}
+
+.header .menu2 ul li{
+  display: inline;
+}
+.header .menu2 ul li a, .header .menu2 ul li a:link, .header .menu2 ul li a:visited{
+  color: aliceblue;
+  padding: 0px 10px 0px 5px;
+  text-decoration: none;
+}
+
+#CPanel{
+  display: none;
+  background-color: aliceblue;
+  color: black;
+  left: 25%;
+  top: 25%;
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
+
+#CPanel2{
+  display: flex;
+  background-color: aliceblue;
+  color: black;
+  left: 25%;
+  top: 15%;
+  height: 400px;
+  width: 50%;
+  position: fixed;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
+
+
+#CPanel .wrapper_panel{
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row1{
+  background-color: #1e1c1c;
+}
+
+
+.form-control{
+  transition: 180ms box-shadow ease-in-out;
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  margin: 0 0 20px;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+}
+
+.submit_button{
+  width: 250px;
+  margin-top: 100px;
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #40cb6c;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+}
+
+.add_button{
+  width: 70px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #000000;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 25%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 5px 20px 5px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  float: right;
+  left: 45px
+  
+}
+
+#myInput2 {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 25%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 5px 20px 5px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  float: right;
+  left: 45px
+  
+}
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
